@@ -1,9 +1,14 @@
 output "instance_id" {
   description = "ID of the EC2 instance"
-  value       = aws_instance.app_server.id
+  value       = aws_instance.sample_ec2.*.id
 }
 
 output "instance_public_ip" {
   description = "Public IP address of the EC2 instance"
-  value       = aws_instance.app_server.public_ip
+  value       = aws_instance.sample_ec2.*.public_ip
+}
+
+output "instance_tags" {
+  description = "Tags of the EC2 instance"
+  value       = aws_instance.sample_ec2.*.tags
 }
