@@ -10,5 +10,5 @@ output "instance_public_ip" {
 
 output "instance_tags" {
   description = "Tags of the EC2 instance"
-  value       = aws_instance.sample_ec2.*.tags
+  value       = element(aws_instance.sample_ec2.*.tags, 0)
 }
