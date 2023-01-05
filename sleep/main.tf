@@ -1,3 +1,16 @@
+terraform {
+  required_providers {
+    time = {
+      source = "hashicorp/time"
+      version = "0.9.1"
+    }
+  }
+}
+
+#provider "time" {
+  # Configuration options
+#}
+
 resource "null_resource" "previous" {}
 
 resource "time_sleep" "wait_30_seconds" {
