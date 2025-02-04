@@ -18,30 +18,30 @@
 
 variable "example" {
   description = "Example variable"
-  type        = "string"
+  type        = string
   default     = "example"
 }
 
 variable "example2" {
   description = "Example variable 2"
-  type        = "string"
+  type        = string
   default     = ""
 }
 
 variable "example_list" {
   description = "An example variable that is a list."
-  type        = "list"
+  type        = list
   default     = []
 }
 
 variable "example_map" {
   description = "An example variable that is a map."
-  type        = "map"
+  type        = map
   default     = {}
 }
 
 variable "example_any" {
   description = "An example variable that is can be anything"
-  type        = "string"
+  type        = string
   default     = "null"
 }
